@@ -3,6 +3,7 @@ var contador = 0;
 var modalActivado = function(){
     $('.modal').modal();
     $("#contacto").submit(agregarContacto);
+    $("#cancelar").click(borrarDatos);
 };
 
 var agregarContacto = function(e){
@@ -37,6 +38,12 @@ var agregarContacto = function(e){
     $tarjeta.append($color);
     //Impresión de Tarjeta
     $("#contactosGuardados").append($tarjeta);
+    borrarDatos();
+};
+
+var borrarDatos = function(){
+    $("#datoNombre").val("").removeClass("valid");
+    $("#datoTelefono").val("").removeClass("valid");
 };
 
 $(document).ready(modalActivado);

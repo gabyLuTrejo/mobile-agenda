@@ -18,20 +18,7 @@
 	<section id="contactosGuardados" class="container">
         <div class="row margin-bottom">
 			<p class="col s7 offset-s5">Cantidad de contactos: <span id="numeroContactos"> 0 </span></p>
-		</div>
-		<div class="row card"> <!--tarjeta-->
-            <div class="purple lighten-5 card-content"> <!--color-->
-                <div class="row valign-wrapper"> <!--contenido-->
-                    <div class="col s4"> <!--colImagen-->
-                        <img src="http://www.fly-top.de/images/contact/User.png">
-                    </div>
-                    <div class="col s8"> <!--colDatos-->
-                        <p class="card-title center-align">Nombre</p> <!--pNombre-->
-                        <p class="center-align flow-text"><i class="material-icons">phone</i> 55 123456789</p> <!--pNumero-->
-                    </div>
-                </div>  
-            </div>	       
-        </div>        
+		</div>       
     </section>
     <section class="container">
         <div id="nuevoContacto" class="modal">
@@ -49,7 +36,7 @@
                             <label for="datoTelefono"> Teléfono</label>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn-xs modal-action modal-close waves-effect waves-light" type="button" name="action">
+                            <button id="cancelar" class="btn-xs modal-action modal-close waves-effect waves-light" type="button" name="action">
                                 Cancelar
                             </button>
                             <button class="btn-xs modal-action modal-close waves-effect waves-light right" type="submit" name="action">

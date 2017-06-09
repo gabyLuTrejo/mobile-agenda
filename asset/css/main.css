@@ -1,0 +1,12 @@
+ .btn-xs {
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .3px;
+ }
+
+ body .container .margin-bottom {
+ 	margin-bottom: 0px;
+ }
+    
